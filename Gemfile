@@ -49,6 +49,7 @@ group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
   gem 'rails-controller-testing'
   gem 'rspec-rails'
+  gem 'devise'
 end
 
 group :development do
