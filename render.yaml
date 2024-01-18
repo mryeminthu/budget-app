@@ -1,6 +1,6 @@
 databases:
   - name: ymt_budget
-    databaseName: ymt-budget
+    databaseName: ymt_budget
     user: ymt_budget_user
     plan: free
 
