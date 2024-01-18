@@ -1,8 +1,8 @@
 databases:
   - name: postgres
     ipAllowList: []
-    databaseName: budget_app
-    user: budget_app
+    databaseName: postgres
+    user: budgetapp
 
 services:
   - type: web
@@ -11,9 +11,9 @@ services:
     buildCommand: "./render-build.sh"
     startCommand: "bundle exec rails s"
     envVars:
-      - key: DATABASE_URL
-        fromDatabase:
-          name: postgres
-          property: connectionString
-      - key: RAILS_MASTER_KEY
-        sync: false
+  - key: DATABASE_URL
+    fromDatabase:
+      name: postgres
+      property: connectionString
+  - key: RAILS_MASTER_KEY
+    sync: false
