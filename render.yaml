@@ -1,8 +1,8 @@
 databases:
   - name: postgres
     ipAllowList: []
-    databaseName: postgres
-    user: budget-app
+    databaseName: budget_app
+    user: budget_app
 
 services:
   - type: web
