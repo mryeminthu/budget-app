@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+@import "navbar";
+@import "category";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ebedf0;
+}

@@ -1,9 +1,19 @@
-<h1>New expense</h1>
+<%= form_with(model: [@category, @expense], url: category_expenses_path(@category), method: :post, remote: true) do |form| %>
 
-<%= render "form", expense: @expense %>
+  <div class="transaction-name-field">
+    <%= form.text_field :name, required: true, placeholder: 'Name', class: "transaction-name" %>
+  </div>
 
-<br>
+  <div class="transaction-amount-field">
+    <%= form.number_field :amount, required: true, placeholder: 'Amount',class: "transaction-amount" %>
+  </div>
 
-<div>
-  <%= link_to "Back to expenses", expenses_path %>
-</div>
+  <div class="transaction-category-field text-center">
+    <h4><%= form.label :category_id, "Select a category", class: "select-category" %></h4>
+    <%= form.collection_select(:category_id, current_user.categories, :id, :name, { selected: @expense.category_id, required: true }) %>
+  </div>
+
+  <div class="save2">
+    <%= form.submit 'Save', class: "add-category-button" %>
+  </div>
+<% end %>
