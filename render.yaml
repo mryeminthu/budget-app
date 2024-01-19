@@ -6,7 +6,7 @@ databases:
 
 services:
   - type: web
-    name: yemin
+    name: ymt
     runtime: ruby
     plan: free
     buildCommand: "./bin/render-build.sh"
