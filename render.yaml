@@ -1,12 +1,12 @@
 databases:
   - name: ymt_budget
     databaseName: ymt_budget
-    user: mysite
+    user: ymt_budget_4959_user
     plan: free
 
 services:
   - type: web
-    name: mysite
+    name: yemin
     runtime: ruby
     plan: free
     buildCommand: "./bin/render-build.sh"
