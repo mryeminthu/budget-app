@@ -4,7 +4,12 @@ RSpec.describe CategoriesController, type: :controller do
   include Devise::Test::ControllerHelpers
 
   let(:user) { User.create!(name: 'Test User', email: 'yemin@example.com', password: 'StrongPassword') }
-  let(:category) { user.categories.create(name: 'Test Category', icon: fixture_file_upload(Rails.root.join('spec', 'fixtures', 'icon.png'), 'image/png')) }
+  let(:category) do
+    user.categories.create(name: 'Test Category',
+                           icon: fixture_file_upload(
+                             Rails.root.join('spec', 'fixtures', 'icon.png'), 'image/png'
+                           ))
+  end
 
   before do
     sign_in user

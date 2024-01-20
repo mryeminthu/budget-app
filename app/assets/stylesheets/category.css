@@ -53,7 +53,9 @@
   outline: none;
 }
 
-.tran-name, .tran-amount, .select-category {
+.tran-name,
+.tran-amount,
+.select-category {
   color: rgba(10, 10, 197, 0.879);
   margin-bottom: 7px;
   font-weight: 600;
