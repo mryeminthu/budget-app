@@ -60,7 +60,6 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://ymt-budget-dupn.onrender.com)
-- [Video Walkthrough](https://www.loom.com/share/fb887b973185447593a08559882c40dd?sid=003e5c39-5088-4c84-a3b3-ede9ff8ccca8)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
