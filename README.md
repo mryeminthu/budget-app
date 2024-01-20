@@ -124,8 +124,9 @@ If you appreciate this project, please consider awarding it a ⭐️.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+- I extend my gratitude to [Gregoire Vella on Behance](https://www.behance.net/gregoirevella) on Behance, who is the creator of the original design
 
-We would like to express my sincere thanks to Microverse for providing us with the resources and knowledge necessary to carry out this project.
+- We would like to express my sincere thanks to Microverse for providing us with the resources and knowledge necessary to carry out this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
