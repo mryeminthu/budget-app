@@ -113,7 +113,7 @@ rails server
 ## 🤝 Contributing <a name="contributing"></a>
 
 - Feel free to contribute, report issues, or make feature requests – your input is appreciated!
-  Feel free to check the [issues page]().
+  Feel free to check the [issues page](https://github.com/mryeminthu/budget-app/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -132,6 +132,6 @@ If you appreciate this project, please consider awarding it a ⭐️.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/) licensed.
+This project is [MIT](https://github.com/mryeminthu/budget-app/blob/dev/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
