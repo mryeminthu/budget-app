@@ -1,0 +1,20 @@
+<%= form_with(model: [@category, @expense], url: category_expenses_path(@category), method: :post, remote: true) do |f| %>
+  <div class="transaction-name-field text-center">
+    <%= f.label :name, 'Name', class: 'tran-name' %>
+    <%= f.text_field :name, class: 'transaction-name', required: true, placeholder: 'Enter Name' %>
+  </div>
+
+  <div class="transaction-amount-field text-center">
+    <%= f.label :amount, 'Amount', class: 'tran-amount' %>
+    <%= f.number_field :amount, class: 'transaction-amount', required: true, placeholder: 'Enter Amount' %>
+  </div>
+
+  <div class="transaction-category-field text-center">
+    <%= f.label :category_id, 'Select a category', class: 'select-category' %>
+    <%= f.collection_select(:category_id, current_user.categories, :id, :name, { selected: @expense&.category_id }, { class: 'form-control', required: true }) %>
+  </div>
+
+  <div class="save2">
+    <%= f.submit 'Save', class: 'add-category-button' %>
+  </div>
+<% end %>

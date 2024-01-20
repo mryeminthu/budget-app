@@ -1,0 +1,72 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <% unless current_page?(root_path) %>
+      <% if current_page?(new_category_path) %>
+        <%= link_to root_path, class: "navbar-brand d-lg-block" do %>
+          <%= image_tag(image_path("arrow-left.svg"), alt: "Back", class: "back-arrow") %>
+        <% end %>
+      <% elsif current_page?(categories_path) %>
+        <%= link_to categories_path, class: "navbar-brand d-lg-block" do %>
+          <%= image_tag(image_path("arrow-left.svg"), alt: "Back", class: "back-arrow") %>
+        <% end %>
+      <% elsif defined?(@category) && current_page?(new_category_expense_path(@category)) %>
+        <%= link_to category_path(@category), class: "navbar-brand d-lg-block" do %>
+          <%= image_tag(image_path("arrow-left.svg"), alt: "Back", class: "back-arrow") %>
+        <% end %>
+      <% else %>
+        <%= link_to root_path, class: "navbar-brand d-lg-block" do %>
+          <%= image_tag(image_path("arrow-left.svg"), alt: "Back", class: "back-arrow") %>
+        <% end %>
+      <% end %>
+    <% end %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <% if current_page?(root_path) %>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
+          <li class="nav-item me-2">
+            <span class="nav-link">Category</span>
+          </li>
+        </ul>
+      <% else %>
+        <ul class="navbar-nav d-flex">
+          <% if current_page?(new_category_path) %>
+            <li class="nav-item me-2">
+              <span class="nav-link">Add a new category</span>
+            </li>
+          <% elsif defined?(@category) && current_page?(new_category_expense_path(@category)) %>
+            <li class="nav-item me-2">
+              <span class="nav-link">Add a new transaction</span>
+            </li>
+          <% elsif defined?(@category) && current_page?(category_path(@category)) %>
+            <li class="nav-item me-2">
+              <span class="nav-link">Transactions</span>
+            </li>
+          <% end %>
+        </ul>
+      <% end %>
+      <ul class="navbar-nav ms-auto d-flex">
+        <% if current_user %>
+          <li class="nav-item me-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <%= current_user.name %>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-lg-end">
+              <li><%= link_to "Edit account", edit_user_registration_path, class: "dropdown-item" %></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item", data: { turbo_method: :delete } %></li>
+            </ul>
+          </li>
+        <% else %>
+          <li class="nav-item me-2">
+            <%= link_to "Sign Up", new_user_registration_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item me-2">
+            <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</nav>
