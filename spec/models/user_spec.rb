@@ -1,10 +1,8 @@
-# spec/models/user_spec.rb
-
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
   describe 'validations' do
-    subject { described_class.new(name: 'Htet', email: 'htet@gmail.com', password: 'password123') }
+    subject { described_class.new(name: 'yemin', email: 'yemin@gmail.com', password: 'StrongPassword') }
 
     it 'is valid with valid attributes' do
       expect(subject).to be_valid
@@ -24,7 +22,7 @@ RSpec.describe User, type: :model do
 
     it 'requires email to be unique' do
       subject.save
-      duplicate_user = described_class.new(name: 'Duplicate', email: 'htet@gmail.com', password: 'password123')
+      duplicate_user = described_class.new(name: 'Duplicate', email: 'yemin@gmail.com', password: 'StrongPassword')
       expect(duplicate_user).to_not be_valid
       expect(duplicate_user.errors[:email]).to include('has already been taken')
     end

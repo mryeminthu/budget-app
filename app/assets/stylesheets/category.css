@@ -43,6 +43,7 @@
 .transaction-name-field,
 .transaction-amount-field {
   margin: 25px 0;
+  font-weight: 700;
 }
 
 .transaction-name,
@@ -52,6 +53,10 @@
   outline: none;
 }
 
+.tran-name,
+.tran-amount,
 .select-category {
   color: rgba(10, 10, 197, 0.879);
+  margin-bottom: 7px;
+  font-weight: 600;
 }

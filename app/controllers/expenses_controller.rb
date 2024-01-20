@@ -1,20 +1,26 @@
 class ExpensesController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_category, only: %i[index new create]
 
   def index
     @expenses = @category.expenses.order(created_at: :desc)
   end
 
   def new
+    @category = current_user.categories.find_by(id: params[:category_id])
+
+    unless @category
+      redirect_to root_path, alert: 'Category not found.'
+      return
+    end
+
     @expense = @category.expenses.build
   end
 
   def create
-    @expense = @category.expenses.build(expense_params.merge(user: current_user))
+    @expense = current_user.expenses.build(expense_params)
 
     if @expense.save
-      redirect_to category_path(@category), notice: 'Successfully created.'
+      redirect_to category_path(@expense.category), notice: 'Successfully created.'
     else
       render :new
     end
@@ -22,11 +28,7 @@ class ExpensesController < ApplicationController
 
   private
 
-  def set_category
-    @category = current_user.categories.find(params[:category_id])
-  end
-
   def expense_params
-    params.require(:expense).permit(:name, :amount)
+    params.require(:expense).permit(:name, :amount, :category_id)
   end
 end
