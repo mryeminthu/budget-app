@@ -1,5 +1,4 @@
 <div align="center">
-  <br/>
   <h1>Budget App</h1>
 </div>
 <a name="readme-top"></a>
@@ -10,25 +9,22 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-    - [🚀 Live Demo ](#-live-demo-)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
+  - [Usage](#usage)
   - [Run tests](#run-tests)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
 - [📝 License](#license)
 
+# 📖 [Recipe App] <a name="about-project"></a>
 
-# 📖 Budget_App <a name="about-project"></a>
-
-> The Budget-app is a mobile web platform for efficient budget management. Users can register, log in, categorize transactions, and monitor expenses seamlessly. With strong authentication, PostgreSQL database, and testing, it ensures a smooth and safe budget tracking experience.
-
+> The Recipe app allows you to save ingredients and track what's in your kitchen. With it, you can make new recipes and receive a shopping list based on what you have and need. This list helps identify what items you need for specific dishes. Additionally, sharing your recipes becomes enjoyable, and the app assists by generating a shopping list that shows what's available.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -42,114 +38,100 @@
     <ul>
     <li><a href="https://ruby-doc.org/core-3.1.2/">Rails</a></li>
   </ul>
-  <ul>
-    <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
-  </ul>
 </details>
 
 ### Key Features <a name="key-features"></a>
 
-- [ ] Create Category
-- [ ] Create Transaction
-- [ ] User Sign-up and Log In
+- **Users can share their recipes with others.**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link](https://ymt-budget-dupn.onrender.com)
-- [Video Walkthrough](https://www.loom.com/share/fb887b973185447593a08559882c40dd?sid=003e5c39-5088-4c84-a3b3-ede9ff8ccca8)
+- **Users can create their unique recipes.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-To get a local copy up and running follow these simple example steps.
+To install a duplicate of this project on your computer, kindly abide by the guidelines provided below.
 
 ### Prerequisites
 
-- IDE to edit and run the code (We use Visual Studio Code 🔥).
-- Git to versionning your work.
-- Postgresql
+In order to run this project you need:
+
+- Code Editor
+
+- Install ruby on your computer
+
+- Install rails on your computer
 
 ### Setup
 
-To setup and install this sample Recipe-App project, follow the below steps:
-- Clone this project by the command: 
-  ```
-  git clone https://github.com/YoutLone/Budget_App.git
-  ```
+Clone the project into your desired folder by using this command:
 
-- Then switch to the project folder by the below query:
+```sh
+git clone https://github.com/
 
-  ```
-  cd Budget_App
-  ```
+cd recipe_app
+```
 
 ### Install
 
-- Install the required dependecies with:
-  ```
-  bundle install
-  ```
-- Install npm dependencies with: 
-  ```
-  npm install
-  ```
-- Before running below commands update [config/database.yml](./config/database.yml) with your local `DB`credentials. Then run:
-    ```
-    rake db:create
-    ```
-    ```
-    rake db:migrate
-    ```
-- With Ruby on Rails and PostgreSQL installed in your environment, you can run `rails server` to run the website.
+Install this project with:
+
+```sh
+ bundle install
+```
+
+### Usage
+
+To run the project, execute the following command:
+
+```sh
+rails server
+```
 
 ### Run tests
 
-- Run `bundle install`
-- Run `bundle exec rspec spec`
+```sh
+  rspec
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Author
-👤 **Than Myo Htet**
+## Authors <a name="authors"></a>
 
-- GitHub: [@YoutLone](https://github.com/YoutLone)
-- LinkedIn: [than-myo-htet-618b2524b](https://linkedin.com/in/than-myo-htet-618b2524b)
+👤 **Ye Min Thu**
 
+- GitHub: [GitHub](https://github.com/mryeminthu)
+- Twitter: [Twitter](https://twitter.com/mryeminthu)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ye-min-thu-76456a214/)
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Add API**
+- [ ] **[Add more exciting features with a user-friendly interface design.]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🤝 Contributing <a name="contributing"></a>
 
-## 🤝 Contributing
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](https://github.com/YoutLone/Budget_App/issues).
+- Feel free to contribute, report issues, or make feature requests – your input is appreciated!
+  Feel free to check the [issues page]().
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Show your support
-Give a ⭐️ if you like this project!
+## ⭐️ Show your support <a name="support"></a>
+
+If you appreciate this project, please consider awarding it a ⭐️.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+- I extend my gratitude to [Gregoire Vella on Behance](https://www.behance.net/gregoirevella) on Behance, who is the creator of the original design
 
-- My Acknowledgements to Gregoire Vella on Behance the author of the original design, as required by the Creative Commons license of the design. [Gregoire Vella on Behance](https://www.behance.net/gregoirevella) the [author of the original design](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=), as required by the [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/).
-
-- I would like to thank [Microverse](https://bit.ly/MicroverseTN) for giving me this project to work on
+- We would like to express my sincere thanks to Microverse for providing us with the resources and knowledge necessary to carry out this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/YoutLone/Budget_App/blob/dev/LICENSE) licensed.
+This project is [MIT](https://github.com/) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
