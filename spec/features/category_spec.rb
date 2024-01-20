@@ -16,7 +16,7 @@ RSpec.feature 'Categories', type: :feature do
   end
 
   scenario 'User visits a category page' do
-    category = create(:category, user: user)
+    category = create(:category, user:)
     visit category_path(category)
     expect(page).to have_content('Total cost for this category')
   end
