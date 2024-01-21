@@ -22,9 +22,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [Recipe App] <a name="about-project"></a>
+# 📖 [Budget App] <a name="about-project"></a>
 
-> The Recipe app allows you to save ingredients and track what's in your kitchen. With it, you can make new recipes and receive a shopping list based on what you have and need. This list helps identify what items you need for specific dishes. Additionally, sharing your recipes becomes enjoyable, and the app assists by generating a shopping list that shows what's available.
+> The Budget-app is a user-friendly mobile website designed for effective money management. It allows users to sign up, log in, categorize transactions, and effortlessly monitor expenses.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -42,9 +42,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Users can share their recipes with others.**
-
-- **Users can create their unique recipes.**
+- Create Category
+- Create Transaction
+- User Sign-up and Log In
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -67,9 +67,9 @@ In order to run this project you need:
 Clone the project into your desired folder by using this command:
 
 ```sh
-git clone https://github.com/
+git clone https://github.com/mryeminthu/budget-app.git
 
-cd recipe_app
+cd budget-app
 ```
 
 ### Install
@@ -113,7 +113,7 @@ rails server
 ## 🤝 Contributing <a name="contributing"></a>
 
 - Feel free to contribute, report issues, or make feature requests – your input is appreciated!
-  Feel free to check the [issues page]().
+  Feel free to check the [issues page](https://github.com/mryeminthu/budget-app/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -124,6 +124,7 @@ If you appreciate this project, please consider awarding it a ⭐️.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
 - I extend my gratitude to [Gregoire Vella on Behance](https://www.behance.net/gregoirevella) on Behance, who is the creator of the original design
 
 - We would like to express my sincere thanks to Microverse for providing us with the resources and knowledge necessary to carry out this project.
@@ -132,6 +133,8 @@ If you appreciate this project, please consider awarding it a ⭐️.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/) licensed.
+This project is [MIT](https://github.com/mryeminthu/budget-app/blob/dev/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
