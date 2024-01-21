@@ -22,7 +22,7 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [Recipe App] <a name="about-project"></a>
+# 📖 [Budget App] <a name="about-project"></a>
 
 > The Budget-app is a user-friendly mobile website designed for effective money management. It allows users to sign up, log in, categorize transactions, and effortlessly monitor expenses.
 
