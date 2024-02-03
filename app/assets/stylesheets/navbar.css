@@ -13,3 +13,8 @@
   width: 50px;
   height: 50px;
 }
+
+.dropdown-menu li {
+  background-color: rgb(0, 255, 76);
+  font-weight: bold;
+}
